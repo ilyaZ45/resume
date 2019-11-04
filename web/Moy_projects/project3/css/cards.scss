@@ -1,0 +1,130 @@
+html{
+  //width: 1440px;
+  font-size: 62.5%;
+}
+
+
+.btn {
+  width: 80%;
+  height: 40px;
+  border-radius: 60px;
+  transition: ease 0.2s;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.main {
+  background-color: #203447;
+  border: solid 3px #203447;
+}
+.main:hover {
+  background-color: #fff;
+  border: solid 3px #203447;
+  transition: ease 0.2s;
+  box-shadow: 0px 10px 0px #203447;
+  transform: scale(1.03) translatey(-10px);
+}
+.main:hover > .text {
+  color: #203447;
+}
+.main:hover > .fwdArrow {
+  border-color: #203447;
+}
+.main:active {
+  transform: translateY(10px);
+  box-shadow: 0px 0px 0px #203447;
+  transition-duration: 0.04s;
+}
+.danger {
+  background-color: #c44040;
+  border: solid 3px #c44040;
+}
+.danger:hover {
+  background-color: #fff;
+  border: solid 3px #c44040;
+  transition: ease 0.2s;
+  box-shadow: 0px 10px 0px #c44040;
+  transform: scale(1.03) translatey(-10px);
+}
+.danger:hover > .text {
+  color: #c44040;
+}
+.danger:hover > .bwdArrow {
+  border-color: #c44040;
+}
+.danger:active {
+  transform: translateY(10px);
+  box-shadow: 0px 0px 0px #c44040;
+  transition-duration: 0.04s;
+}
+.btn-append {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.btn-prepend {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.text {
+  text-align: center;
+  font-size: 22px;
+  width: 80%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  transition: ease 0.2s;
+}
+.fwdArrow {
+  width: 20px;
+  height: 20px;
+  border-color: #1e1e2d;
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  transform: rotate(-45deg);
+  border-color: #fff;
+  transition: ease 0.2s;
+}
+.bwdArrow {
+  width: 20px;
+  height: 20px;
+  border-color: #1e1e2d;
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  transform: rotate(135deg);
+  border-color: #fff;
+  transition: ease 0.2s;
+}
+.bwdArrow:hover {
+  transition: ease 0.4s;
+}
+
+
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  //grid-template-rows: repeat(3, 100px);
+  grid-template-rows:auto;
+}
+.col1{
+  //grid-column: 1/2;
+}
+.box-left,.box-right{
+  display:inline-block;
+}
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.col2{
+  //grid-column: 2/3;
+}

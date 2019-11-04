@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns:xlink="http://www.w3.org/1999/xlink" lang="UTF-8">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.3/bootstrap-slider.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <!--///////////////-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.3/css/bootstrap-slider.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/component-custom-switch.css" rel="stylesheet">
+    <link href="fonts/fontello.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--.buttons-->
+        <div class="buttons-standard">
+            <h1>STANDARD BUTTONS</h1>
+            <div class="col-1"></div><button class="button">BUTTON<div class="ripple"></div></button><button class="button">BUTTON<div class="ripple"></div></button><button class="button">BUTTON<div class="ripple"></div></button><button
+                class="button">BUTTON<div class="ripple"></div></button>
+            <div class="col-2"></div><button class="button">BUTTON<div class="ripple"></div></button><button class="button">BUTTON<div class="ripple"></div></button><button class="button">BUTTON<div class="ripple"></div></button><button
+                class="button">BUTTON<div class="ripple"></div></button>
+            <div class="col-3"></div><button class="button">BUTTON<div class="ripple"></div></button><button class="button">BUTTON<div class="ripple"></div></button><button class="button">BUTTON<div class="ripple"></div></button><button
+                class="button">BUTTON<div class="ripple"></div></button>
+        </div>
+        <div class="buttons-arrow">
+            <h1>ARROW BUTTONS</h1>
+            <!--.arrow1--><a class="circle" href="#" onclick="return false">
+                <div class="arrow"></div>
+            </a><a class="circle" href="#" onclick="return false">
+                <div class="next"></div>
+            </a><a class="button-left" href="#" tabindex="0">
+                <!--#-ссылка на область внутри страницы--></a><a class="button-right" href="#" tabindex="0"></a><a class="button-left" href="#" tabindex="0"></a><a class="button-right" href="#" tabindex="0"></a>
+        </div>
+        <div class="persentages">
+            <h1>persentages / pie shart</h1>
+            <div class="box1" style="--v:-90deg">
+                <p>0</p><!-- 0%-->
+            </div>
+            <div class="box1" style="--v: 46.8deg">
+                <p>38</p>
+                <div class="spinner pie"></div>
+                <div class="filler pie"></div>
+                <div class="mask">
+                    <!-- 12.5%-->
+                </div>
+            </div>
+            <div class="box2" style="--v: -46.8deg">
+                <p>62
+                    <!-- 25%-->
+                </p>
+            </div>
+            <div class="box2" style="--v: 50.4deg">
+                <p>89
+                    <!-- 37.5%-->
+                </p>
+            </div>
+            <div class="box3" style="--v: -46.8deg">
+                <p>0</p>
+                <!--.box4(style='--v: 46.8deg')-->
+                <!--    p-->
+                <!--    .box5-->
+                <!--        p-->
+                <!--        .box6-->
+                <!--            p-->
+                <!--            .box7-->
+                <!--                p-->
+                <!---->
+                <!---->
+            </div>
+        </div>
+        <div class="sliders">
+            <h1>Stages</h1>
+            <div class="leftslider">
+                <div class="stage"><input type="text" data-provide="slider" data-slider-min="0" data-slider-max="5" data-slider-step="0.01" data-slider-value="3" data-slider-tooltip="hide" data-slider-id="st"></div>
+            </div>
+            <div class="rightslider">
+                <div class="stage"><input type="text" data-provide="slider" data-slider-min="0" data-slider-max="100" data-slider-step="0.01" data-slider-value="3" data-slider-ticks="[1,2,3,4,5]" data-slider-ticks-labels="[0,25,50,75,100]"
+                        data-slider-tooltip="hide" data-slider-id="st"></div>
+            </div>
+            <h1>Stages</h1>
+            <div class="candle">
+                <div class="stage"><input type="text" data-provide="slider" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="3" data-slider-ticks="[1,2,3,4,5]" data-slider-ticks-labels="[1,2,3,4,5]"
+                        data-slider-tooltip="hide" data-slider-id="st"></div>
+                <div class="bubble">
+                    <div class="etiqueta"></div><input class="elInput" type="range" value="50" autocomplete="off">
+                    <ul>
+                        <li>0</li>
+                        <li>25</li>
+                        <li>50</li>
+                        <li>75</li>
+                        <li>100</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <h1>FORM ELEMENTS</h1>
+            <div class="form-elements">
+                <form id="name" action="" method="post">
+                    <div class="name"><input id="tb1" type="text" placeholder="Your Name" name="textBox1">
+                        <!--label(for='tb1') ERROR-->
+                        <div class="name-mes">
+                            <div class="name-row">
+                                <p>ERROR</p>
+                            </div>
+                            <!--input    //если добаавляем через js сообщение-->
+                        </div>
+                    </div>
+                    <div class="mail">
+                        <!--input#tb2(type="email", placeholder='Your Email')--><input id="tb2" type="text" placeholder="Your Email">
+                        <!--label(for="tb2") THANKS-->
+                        <div class="name-mes">
+                            <div class="name-row">
+                                <p>THANKS</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="message"><textarea placeholder="Your Message"></textarea>
+                    <!--br-->
+                    <!--input#Button1.button(type='button', value='submit', onclick='textarea')-->
+                    <!--.ripple--><button class="button">SUBMIT<div class="ripple"></div></button></div>
+            </div>
+            <div class="toggles">
+                <h1>TOGGLES</h1>
+                <!--input(type='checkbox', unchecked='')-->
+                <!--input(type='checkbox', checked='')-->
+                <div class="custom-switch custom-switch-label-onoff"><input class="custom-switch-input" id="ADD_ID_HERE" type="checkbox" unchecked=""><label class="custom-switch-btn" for="ADD_ID_HERE"></label><input class="custom-switch-input"
+                        id="AD_ID_HERE" type="checkbox" checked=""><label class="custom-switch-btn" for="AD_ID_HERE"></label></div>
+            </div>
+            <div class="tick-boxes">
+                <h1>TICK BOXES</h1>
+                <div class="center"><label class="label"><input class="label__checkbox" type="checkbox" checked=""><span class="label__text"><span class="label__check"><i class="fa fa-check icon"></i></span></span></label><label class="label"><input
+                            class="label__checkbox" type="checkbox" unchecked=""><span class="label__text"><span class="label__check"><i class="fa fa-check icon"></i></span></span></label><a class="btn" href="#" onclick="return false" type="checkbox"
+                        checked=""><i class="icon-check"></i></a><a class="btn" href="#" onclick="return false" type="checkbox" unchecked=""><i class="icon-check"></i></a>
+                    <div><input class="checkbox-custom" id="checkbox-1" name="checkbox-1" type="checkbox" checked=""><label class="checkbox-custom-label" for="checkbox-1"></label><input class="checkbox-custom" id="checkbox-2" name="checkbox-1"
+                            type="checkbox" unchecked=""><label class="checkbox-custom-label" for="checkbox-2"></label></div>
+                    <div><input class="radio-custom" id="radio-1" name="radio-group" type="radio" checked=""><label class="radio-custom-label" for="radio-1"></label><input class="radio-custom" id="radio-2" name="radio-group" type="radio"><label
+                            class="radio-custom-label" for="radio-2"></label></div>
+                </div>
+            </div>
+            <div class="search">
+                <h1>SEARCH/DROP DOWN</h1>
+                <div class="d1">
+                    <form><input type="text" placeholder="Search"><button type="submit"></button></form>
+                </div>
+                <div class="d2">
+                    <form><input class="mes" type="text" placeholder="I`ve not found what I`am looking for.."><button type="submit"></button></form>
+                </div>
+                <div class="d3">
+                    <form><input type="text" placeholder="Search"><button type="submit"></button>
+                        <!--input.dropdown(type='text', placeholder='Search')-->
+                        <!--button.dropbtn(type='submit')-->
+                        <!---->
+                        <!--ul.dropnli
+    a(href='#') Link 1
+li
+    a(href='#') Link 2
+li
+    a(href='#') Link 3
+    ////////////////////////-->
+                    </form>
+                    <!--.styled-selectselect
+    option(value='hide') Month
+    option Here is the first option
+    option The second option-->
+                    <div class="conta"><span class="choose"></span>
+                        <div class="dropdown">
+                            <div class="select"><span class="col">Select Gender</span><i class="fa fa-chevron-down"></i></div><input type="hidden" name="gender">
+                            <ul class="dropdown-menu">
+                                <li>Male</li>
+                                <li>Female</li>
+                                <li>Fuck</li>
+                                <Li>Block</Li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <h1>USER PROFILE</h1>
+                <div class="con1"><img src="./images/man.jpg" alt="man">
+                    <div class="name-user">
+                        <h3>John Smith</h3>
+                        <h5>UX DESIGNER</h5>
+                        <div class="social"><i class="icon-facebook"></i><i class="icon-twitter"></i><i class="icon-dribbble"></i></div>
+                    </div>
+                </div>
+                <div class="con2"><img src="./images/wom.jpg" alt="man">
+                    <div class="name-user">
+                        <div class="social"><i class="icon-facebook"></i><i class="icon-twitter"></i><i class="icon-dribbble"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <h1>NEWS & EVENTS</h1>
+            <div class="item-1"><img src="./images/byc.jpg" alt="man">
+                <div class="item-1-1"></div>
+                <h3>Its all</h3>
+                <h5>24 dec</h5>
+                <p>hellojjjjjjjjjjjjjjjjjjjj
+                    ggggggggggggggggggggggg
+                    gggggggggggggggggggggg</p>
+            </div>
+            <div class="item-2"><img src="./images/town.jpg" alt="man">
+                <div class="item-1-1"></div>
+                <h3>Its all</h3>
+                <h5>24 dec</h5>
+                <p>hellojjjjjjjjjjjjjjjjjjjj
+                    ggggggggggggggggggggggg
+                    gggggggggggggggggggggg</p><button class="button">ADD TO CALENDAR<div class="ripple"></div></button>
+            </div>
+        </div>
+        <div class="location">
+            <h1>LOCATION</h1>
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d2454.77061478459!2d47.785018695818614!3d52.0292763922815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d52.029533799999996!2d47.7845681!5e0!3m2!1sru!2sru!4v1553502414761"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+        </div>
+        <div class="calendar">
+            <h1>CALENDAR</h1>
+            <div id="caleandar"></div>
+            <!--.foot TODAY-->
+            <script type="text/javascript" src="js/caleandar.js"></script>
+            <script type="text/javascript" src="js/demo.js"></script>
+        </div>
+        <div class="messaging">
+            <h1>MESSAGING</h1>
+            <div class="blocks">
+                <div class="blocks-up">
+                    <h2>SARAH BROWN</h2>
+                    <div class="blocks-up-layer"></div>
+                </div>
+                <div class="blocks-middle">
+                    <div class="blocks-middle-icon">
+                        <div class="speech"></div><img class="wom" src="./images/wom.jpg" alt="woman"><img src="img/Camera Icon.svg" alt="картинка на SVG">
+                    </div>
+                    <div class="mes-wom">
+                        <p>Hi,what are you doing men</p>
+                    </div>
+                    <div class="mes-answ">
+                        <p>Hello all right</p>
+                    </div><a href="first.html" title=""><button class="button">REPLY<div class="ripple"></div></button></a>
+                </div>
+            </div><svg>
+                <use xlink:href="img/sprite.svg#Arrow_Left" fill="green"></use>
+            </svg><svg #Arrow_Left xmlns="http://www.w3.org/2000/svg" width="19.25" height="45.19" viewbox="0 0 9.25 25.19" fill="red">
+                <path class="cls-1" d="M67.185,2529.81l1.683,1.68,7.574-7.57-1.683-1.68Zm0,0.06,1.683-1.68,7.574,7.57-1.683,1.69Z" transform="translate(-67.188 -2522.25)"></path>
+            </svg>
+        </div>
+        <div class="video">
+            <h1>VIDEO</h1>
+            <div class="videopleer">
+                <!--iframe(width='100%', height='480', src='https://www.youtube.com/embed/wYtgt507Y5k', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')--><video width="100%"
+                    height="267" poster="media/cars.png">
+                    <source src="media/cars.mp4" type="video/mp4"></video>
+                <h2>Hello my whity bread</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.button').on('click', function(e) {
+
+            // Click coordinates.
+            let css = {
+                top: e.offsetY,
+                left: e.offsetX
+            };
+
+            $('.ripple', this).css(css).addClass('ripple--animate');
+
+            $('.ripple').on('animationEnd animationend webkitAnimationEnd oanimationend MSAnimationEnd', function() {
+                $(this).removeClass('ripple--animate');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            //create slider
+            $('#exstage').slider();
+
+            //change color for inner text on page load
+            var tick = $(".slider-tick-container").children();
+            var tickLabel = $(".slider-tick-label-container").children();
+
+            for (var i = 0; i < tickLabel.length; i++) {
+                if (tick.eq(i).hasClass("in-selection")) {
+                    tickLabel.eq(i).addClass("whiteNum");
+                }
+            }
+
+
+            //change color for inner text after clicking
+            $(".stages").click(function() {
+                var inSellection = $(".slider-tick-container").children();
+                var labbels = $(".slider-tick-label-container").children();
+
+                for (var i = 0; i < labbels.length; i++) {
+                    if (inSellection.eq(i).hasClass("in-selection")) {
+                        labbels.eq(i).addClass("whiteNum");
+                    } else {
+                        labbels.children(i).removeClass("whiteNum");
+                    }
+
+                }
+            });
+        });
+    </script>
+    <script>
+        var etiqueta = document.querySelector(".etiqueta");
+        var elInput = document.querySelector(".elInput");
+        var w = parseInt(window.getComputedStyle(elInput, null).getPropertyValue('width'));
+        console.log(w);
+        w = 47.1;
+        var paso = w / 100;
+
+        var left = window.getComputedStyle(etiqueta, null).getPropertyValue('left');
+
+        var modifyValueAttr = function() {
+            elInput.setAttribute('value', elInput.value);
+            etiqueta.innerHTML = "<p>" + elInput.value + "</p>";
+            etiqueta.style.left = ((elInput.value * paso) - 8) + "%";
+        };
+
+        window.addEventListener('load', modifyValueAttr, false);
+        elInput.addEventListener('input', modifyValueAttr, false);
+    </script>
+    <script>
+        /*Dropdown Menu*/
+        $('.dropdown').click(function() {
+            $(this).attr('tabindex', 1).focus();
+            $(this).toggleClass('active');
+            $(this).find('.dropdown-menu').slideToggle(300);
+        });
+        $('.dropdown').focusout(function() {
+            $(this).removeClass('active');
+            $(this).find('.dropdown-menu').slideUp(300);
+        });
+        $('.dropdown .dropdown-menu li').click(function() {
+            $(this).parents('.dropdown').find('span').text($(this).text());
+            $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+        });
+        /*End Dropdown Menu*/
+
+
+        $('.dropdown-menu li').click(function() {
+            var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+                msg = '<span class="msg">Hidden input value: ';
+            $('.msg').html(msg + input + '</span>');
+        });
+
+        ///////////////////// calendar
+    </script><!-- End Calender-->
+    <!-- -Google Analytics Designmaz.net-->
+    <script>
+        $(document).ready(function() {
+            $('video').mediaelementplayer({
+                alwaysShowControls: false,
+                videoVolume: 'horizontal',
+                features: ['playpause', 'progress', 'volume', 'fullscreen']
+            });
+        });
+    </script>
+</body>
+
+</html>

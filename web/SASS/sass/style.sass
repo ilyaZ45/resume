@@ -1,0 +1,62 @@
+//compileCompressed:../css/style.css,  .map:true
+
+/* Вложенность */
+.main-text
+    p
+        text-align: center
+        display: block
+    span
+        display: block
+    strong
+        text-align: none
+
+/* Вложенность в классах*/
+.main
+    &-text
+        text-align: center
+        &__active
+            text-decoration: underline
+    &-image
+        max-width: 100%
+    &-button
+        margin-left: 30px
+
+/* Переменные */
+$main-color: #ff5533
+$width: 200px
+
+body
+    color: $main-color
+
+.main
+    &-text
+        color: $main-color
+
+.button
+    width: $width
+.text
+    width: 2 * $width
+
+/* Миксины */
+=large-text
+    font:
+        size: 24px
+        weight: 800
+        style: italic
+
+.main-text
+    +large-text
+
+.about-text
+    color: red
+    text-align: center
+    +large-text
+
+/* Операции с цветами */
+$color: #ff3888
+
+.main-text
+    color: $color
+button
+    background-color: lighten($color, 30%)
+    padding: 10px

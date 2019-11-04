@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
+
+
+</head>
+<body>
+    <div id="root"></div>
+
+
+    <script>
+        const HelloComponent = React.createClass({
+            render() {   // render отвечает как ваш компонент будет выглядеть
+			             // и будет вызываться каждый раз,чтобы получить новое DOM дерево
+                console.log(this.props);  // эту строку добавили чтобы увидеть что лежит в консоли
+                return React.createElement('div', {},
+                    React.createElement('h1', {style: {color:'orange'}}, `Hello,  ${this.props.name}!!`),   // createElement можно стилизовать элементы
+                    React.createElement('img', {src: this.props.avatar, alt:this.props.name, style: {margin:'100px'}})
+
+                );
+
+
+                 // React.createElement('h1', {style: {color:'orange'}},`Hello, ${this.props.name}!!`)
+            }
+        });
+        // console.log(React.createElement('h1', {style: {color:'red'}},"Hello"));
+        ReactDOM.render(
+            React.createElement(HelloComponent, { name: 'Ilya', avatar:'http://1avatara.ru/img/catalog_logo/pic27.gif'}),
+            document.getElementById('root')
+        )
+
+    </script>
+</body>
+</html>
