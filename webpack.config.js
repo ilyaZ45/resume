@@ -13,8 +13,8 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    
-	
+
+
     module: {
         rules: [
 				{
@@ -28,7 +28,7 @@ module.exports = {
 					}, {
 					  loader: 'sass-loader',
 					  options: { sourceMap: true }
-					}, 
+					},
 					  //{
 						//loader: 'postcss-loader', // Run postcss actions
 						//options: {
@@ -48,20 +48,20 @@ module.exports = {
 					'css-loader'
 				  ]
 				},
-				{  
-                   
+				{
+
                 test: /\.pug$/,
                 use: [
                     "html-loader",
                     "pug-html-loader"
                 ]
 				},{
-			  test: /\.js$/,
-			  exclude: /node_modules/,
-			  use: [{
-				loader: 'babel-loader',
-				options: {
-				  presets: ['env']
+        			test: /\.js$/,
+        			exclude: /node_modules/,
+        			use: [{
+        			loader: 'babel-loader',
+        			options: {
+        			presets: ['env']
 				}
 			  }]
 			},
@@ -99,14 +99,14 @@ module.exports = {
    // new webpack.HotModuleReplacementPlugin(),
 
     new MiniCssExtractPlugin({
-    
+
 	  filename: 'style.css',
 	  // chunkFilename: '[id].css'
 
     }),
     new ExtractTextPlugin("style.css"),
     new CleanWebpackPlugin(),
-  
+
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

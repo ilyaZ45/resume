@@ -5,48 +5,110 @@ html
         title Example
         meta(name="viewport", content="width=device-width, initial-scale=1")
     body
-        header.nav
-            .container
-                ul.nav.nav-pills.nav-fill
-                  li.nav-item
-                    a.nav-link(href='#') About
-                  li.nav-item
-                    a.nav-link(href='#') Profile
-                  li.nav-item
-                    a.nav-link(href='#') Skills
-                  li.nav-item
-                    a.nav-link(href='#') Contacts    
-                .header-image
-                    .row.justify-content-center
-                        img.col-6.rounded-circle(src="img/i_am.jpg" alt="" )
-                    h1.header-text.col-12 ILYA BOBLAK
-                    p Web developer & Front-end
-                    .social
-                        a(href='#')
-                            img(src='png/facebook.png', alt='')
-                        a(href='#')
-                            img(src='png/mail.png', alt='')  
-                        a(href='#')
-                            img(src='png/twitter.png', alt='')
-                        a(href='#')
-                            img(src='png/vk.png', alt='')                    
+        header
+            .nav.container.border
+                .container
+                    ul.nav.nav-pills.nav-fill
+                        li.nav-item
+                            a.nav-link(href='#') About
+                        li.nav-item
+                            a.nav-link(href='#') Profile
+                        li.nav-item
+                            a.nav-link(href='#') Skills
+                        li.nav-item
+                            a.nav-link(href='#') Contacts   
+                .container             
+                    .header-image
+                        .row.justify-content-center
+                            img.col-6.rounded-circle(src="img/i_am.jpg" alt="" )
+                        h1.header-text.col-12 ILYA BOBLAK
+                        p Web developer & Front-end
+                        //- .social
+                        //-     a(href='#')
+                        //-         img(src='png/facebook.png', alt='')
+                        //-     a(href='#')
+                        //-         img(src='png/mail.png', alt='')  
+                        //-     a(href='#')
+                        //-         img(src='png/twitter.png', alt='')
+                        //-     a(href='#')
+                        //-         img(src='png/vk.png', alt='')                    
         .main
-            .main-about.row
-                img.col-4(src="img/i_am.jpg" alt="" )
-                
-                .main-text.col-6    
-                    p ilya was born in uljanovsk 1984 15 april.in 6 years old i relocate in Balakovo
-                                   
-                .social.col-2.justify-content-end
-                    a(href='#')
-                        img(src='png/facebook.png', alt='')
-                    a(href='#')
-                        img(src='png/mail.png', alt='')  
-                    a(href='#')
-                        img(src='png/twitter.png', alt='')
-                    a(href='#')
-                        img(src='png/vk.png', alt='')                                      
-            .main-skills.row            
-        .main-texthg   
-            p ilya was born in uljanovsk 1984 15 april.in 6 years old i relocate in Balakovo    
+            .main-about.container
+                .main-about.row                   
+                    .main-about-img.col-4.border-right 
+                        img.about-photo(src="img/i_am.jpg" alt="" ) 
+                        p Advanced web-developer with 1.5 years old of experience on structuring and developing website with the best use of technology
+                    //- .col-1.border-left.border-right    
+                    .main-about-text.col-7.border-right 
+                        h3 ABOUT ME
+                        //- p ilya was born in uljanovsk 1984 15 april.in 6 years old i relocate in Balakovo
+                        .block.border-right
+                            p Full Name                         
+                            p Address
+                            p Zip
+                            p Phone
+                            p Email
+                        .block2
+                            p Ilya Boblak
+                            p My address
+                            p 410000
+                            p 84952222222
+                            p 111ilya@mail.ru
+                                
+                                           
+                    .main-about-social.col-1.border-right
+                        a(href='#')
+                            img(src='svg/facebook.svg', alt='')
+                        a(href='#')
+                            img(src='svg/mail.svg', alt='')  
+                        a(href='#')
+                            img(src='svg/twitter.svg', alt='')
+                        a(href='#')
+                            img(src='svg/vk.svg', alt='')                                      
+            .main-skills.container.border
+                .main-skills.row.align-items-center
+                    .main-skills-left.col-4
+                        h1 SKILLS
+                        p My expirience
+                    .main-skills-center.col-4.border-left
+                            h2.skills PYTHON
+                                .pieb
+                            h2.skills PYTHON
+                                .piec
+                            h2.skills HTML
+                                .pied
+                    .main-skills-right.col-4         
+                            h2.skills PYTHON
+                                .piee
+                            h2.skills PYTHON
+                                .pieg
+                            h2.skills HTML
+                                .pieh            
+        .footer
+            .work-experience.container
+                .work-experience.row.border
+                    h4.head Work experience
+                    .work-experience-up
+                        .block-left
+                            p
+                                | June 2016-
+                                br
+                                | Present
+                        .block-right.border-top.border-bottom
+                            h4 Front & Developer
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        
+                            						
+                    .work-experience-down
+                        .block-left
+                            p    
+                                | June 2016-
+                                br
+                                | Present
+
+                        .block-right.border-top.border-bottom
+                            h4 Front & Developer
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            
+				
+               
             

@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "webpack --mode production ",
-    "start": "webpack-dev-server --content --debug --color --watch --open --inline --port 8080"
+    "start": "webpack-dev-server --content --debug --pretty --color --watch --open --inline --port 8080"
   },
   "author": "",
   "license": "ISC",

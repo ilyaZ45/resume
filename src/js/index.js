@@ -1,5 +1,6 @@
 require('../index.pug');
 require('../sass/index.sass');
+require('./parts/CircularProgressBar.js');
 
 // import test from 'script-loader!simplebar';
 

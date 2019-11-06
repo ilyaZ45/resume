@@ -11,14 +11,16 @@ html
 body
 	margin: 0
 	padding: 0
-	min-width: 320px
+	min-width: 400px
 	position: relative
 	// font-size: 16px
 	overflow-x: hidden
 	font-family: $font--main
+	background-color: #ffff39
+
 p
-	word-break: break-all
-	
+	word-break: normal
+
 h1
 	font-size: 3rem
 h2
@@ -27,20 +29,99 @@ h3
 	font-size: 1.5rem
 
 
+.nav
+	background-image: url(../img/4.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-attachment: fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
 .header-image
 	text-align: center
-.social a
-	margin-right: 2rem
+// .social a
+// 	margin-right: 2rem
+
+.main
+	margin-top: 3rem
+.main-about.row
+	border-color: grey
+	// background: lightgray
+
+
+.main-about-img.col-4.border-right
+	padding: 0
+	margin: 0
+	& p
+		padding: 1rem
+
+img.about-photo
+	max-width: 100%
+
+.main-about-text
+	display: inline-block
+
+	& h1
+		text-align: center
+	& .block
+		float: left
+		width: 30%
+		max-height: 100%
+		margin-top: 2rem
+	& .block2
+		float: right
+		width: 70%
+		text-align: start
+		margin-top: 2rem
+		padding-left: 1rem
+
+.main-about-img
+	& p
+		margin: 0.5rem
+
+.main-about-social.col-1.border-right
+	text-align: -webkit-center
+	& a img
+		display: block
+		width: 1.5rem
+		margin-top: 1.5rem
+		text-align: -webkit-center
+		vertical-align: super
 .main-block
 	width: 100%
+.main-skills.container
+	margin-top: 2rem
+.main-skills
+	text-align: center
+.skills
+	text-align: -webkit-center
 
 
+.footer
+	margin-top: 3rem
+.work-experience
+	& h4.head
+		width: 30%
+		text-align: right
+		padding: 1rem
+.work-experience-up,.work-experience-down
+	display: flex
+	margin-bottom: 2rem
+.block-left
+	width: 30%
+	height: 100%
+	text-align: center
+	display: flex
+	background: lightgrey
+	& p
+		width: 10rem
+		line-height: 100%
+		float: right
+		margin: auto
 
 
-// header, section, footer
-// 	position: relative
-// 	overflow-x: hidden
-
-// nav, ul
-// 	list-style-type: none
-// 	margin: 0
+.block-right
+	width: 70%
+	padding-left: 1rem
