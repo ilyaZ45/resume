@@ -6,18 +6,27 @@ html
         meta(name="viewport", content="width=device-width, initial-scale=1")
     body
         header
-            .nav.container.border
+            .home
                 .container
-                    ul.nav.nav-pills.nav-fill
+                    //- ul.nav.nav-pills.nav-fill
+                    //-     li.nav-item
+                    //-         a.nav-link(href='#') About
+                    //-     li.nav-item
+                    //-         a.nav-link(href='#') Profile
+                    //-     li.nav-item
+                    //-         a.nav-link(href='#') Skills
+                    //-     li.nav-item
+                    //-         a.nav-link(href='#') Contacts   
+                    ul.nav.nav-pills.nav-justified
                         li.nav-item
-                            a.nav-link(href='#') About
+                            a.nav-link(href='#home') Home
                         li.nav-item
-                            a.nav-link(href='#') Profile
+                            a.nav-link(href='#about') About
                         li.nav-item
-                            a.nav-link(href='#') Skills
+                            a.nav-link(href='#skills') Skills
                         li.nav-item
-                            a.nav-link(href='#') Contacts   
-                .container             
+                            a.nav-link(href='#experience') Experience   
+                #home.container             
                     .header-image
                         .row.justify-content-center
                             img.col-6.rounded-circle(src="img/i_am.jpg" alt="" )
@@ -32,9 +41,9 @@ html
                         //-         img(src='png/twitter.png', alt='')
                         //-     a(href='#')
                         //-         img(src='png/vk.png', alt='')                    
-        .main
+        #about.main
             .main-about.container
-                .main-about.row                   
+                .main-about.row.border                   
                     .main-about-img.col-4.border-right 
                         img.about-photo(src="img/i_am.jpg" alt="" ) 
                         p Advanced web-developer with 1.5 years old of experience on structuring and developing website with the best use of technology
@@ -42,21 +51,31 @@ html
                     .main-about-text.col-7.border-right 
                         h3 ABOUT ME
                         //- p ilya was born in uljanovsk 1984 15 april.in 6 years old i relocate in Balakovo
-                        .block.border-right
-                            p Full Name                         
-                            p Address
-                            p Zip
-                            p Phone
-                            p Email
-                        .block2
-                            p Ilya Boblak
-                            p My address
-                            p 410000
-                            p 84952222222
-                            p 111ilya@mail.ru
+                        table.table.table-striped
+                            tbody
+                                tr
+                                    td Full Name
+                                    td ::
+                                    td Ilya Bob
+                                tr
+                                    td Address
+                                    td ::
+                                    td My address
+                                tr
+                                    td Zip
+                                    td ::
+                                    td 410000
+                                tr
+                                    td Phone
+                                    td ::
+                                    td 84952222222
+                                tr
+                                    td Email
+                                    td ::
+                                    td 111ilya@mail.ru              
                                 
                                            
-                    .main-about-social.col-1.border-right
+                    .main-about-social.col-1
                         a(href='#')
                             img(src='svg/facebook.svg', alt='')
                         a(href='#')
@@ -64,12 +83,21 @@ html
                         a(href='#')
                             img(src='svg/twitter.svg', alt='')
                         a(href='#')
-                            img(src='svg/vk.svg', alt='')                                      
-            .main-skills.container.border
+                            img(src='svg/vk.svg', alt='')  
+                    
+                    //- .social.col-1.container 
+                    //-     ul.nav.flex-column
+                    //-         li.nav-item
+                    //-             a.nav-link(href='#') Link
+                    //-         li.nav-item
+                    //-             a.nav-link(href='#') Link
+                    //-         li.nav-item
+                    //-             a.nav-link(href='#') Link                                    
+            #skills.main-skills.container.border
                 .main-skills.row.align-items-center
                     .main-skills-left.col-4
                         h1 SKILLS
-                        p My expirience
+                        p My expeirience
                     .main-skills-center.col-4.border-left
                             h2.skills PYTHON
                                 .pieb
@@ -84,7 +112,7 @@ html
                                 .pieg
                             h2.skills HTML
                                 .pieh            
-        .footer
+        #experience.footer
             .work-experience.container
                 .work-experience.row.border
                     h4.head Work experience

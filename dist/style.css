@@ -39,7 +39,13 @@ h2 {
 h3 {
   font-size: 1.5rem; }
 
-.nav {
+.home li.nav-item a {
+  font-size: 2rem;
+  color: white; }
+  .home li.nav-item a:hover {
+    color: blue; }
+
+.home .container {
   background-image: url(img/4.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -51,6 +57,10 @@ h3 {
 
 .header-image {
   text-align: center; }
+
+#home img.col-6.rounded-circle {
+  max-width: 30rem;
+  max-height: 30rem; }
 
 .main {
   margin-top: 3rem; }
@@ -83,17 +93,20 @@ img.about-photo {
     margin-top: 2rem;
     padding-left: 1rem; }
 
+table.table {
+  margin-top: 3rem; }
+
 .main-about-img p {
   margin: 0.5rem; }
 
-.main-about-social.col-1.border-right {
-  text-align: -webkit-center; }
-  .main-about-social.col-1.border-right a img {
-    display: block;
+.main-about-social {
+  text-align: -webkit-center;
+  height: 100%; }
+  .main-about-social a img {
+    display: flex;
     width: 1.5rem;
-    margin-top: 1.5rem;
-    text-align: -webkit-center;
-    vertical-align: super; }
+    margin-top: 3rem;
+    padding-bottom: 0.5rem; }
 
 .main-block {
   width: 100%; }
