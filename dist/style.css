@@ -1,3 +1,4 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 @charset "UTF-8";
 @font-face {
   font-family: "Roboto";
@@ -6,10 +7,22 @@
   src: url(fonts/Roboto-Regular/Roboto-Regular.woff2), url(fonts/Roboto-Regular/Roboto-Regular.woff), url(fonts/Roboto-Regular/Roboto-Regular.ttf), url(fonts/Roboto-Regular/Roboto-Regular.eot); }
 
 @font-face {
+  font-family: "Arial";
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/Arial-ItalicMT/Arial-ItalicMT.woff2), url(fonts/Arial-ItalicMT/Arial-ItalicMT.woff), url(fonts/Arial-ItalicMT/Arial-ItalicMT.ttf), url(fonts/Arial-ItalicMT/Arial-ItalicMT.eot); }
+
+@font-face {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
   src: url(fonts/Roboto-Regular/Roboto-Regular.woff2), url(fonts/Roboto-Regular/Roboto-Regular.woff), url(fonts/Roboto-Regular/Roboto-Regular.ttf), url(fonts/Roboto-Regular/Roboto-Regular.eot); }
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/Arial-ItalicMT/Arial-ItalicMT.woff2), url(fonts/Arial-ItalicMT/Arial-ItalicMT.woff), url(fonts/Arial-ItalicMT/Arial-ItalicMT.ttf), url(fonts/Arial-ItalicMT/Arial-ItalicMT.eot); }
 
 * {
   box-sizing: border-box;
@@ -24,8 +37,7 @@ body {
   min-width: 400px;
   position: relative;
   overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
-  background-color: #ffff39; }
+  font-family: "Roboto", sans-serif; }
 
 p {
   word-break: normal; }
@@ -54,11 +66,17 @@ h3 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  .home .container p {
+    font-family: "Arial", sans-serif;
+    font-size: 2rem; }
+
+a.nav-link {
+  cursor: pointer; }
 
 .header-image {
   text-align: center; }
 
-#home img.col-6.rounded-circle {
+img.col-6.rounded-circle {
   max-width: 30rem;
   max-height: 30rem; }
 
@@ -100,13 +118,15 @@ table.table {
   margin: 0.5rem; }
 
 .main-about-social {
-  text-align: -webkit-center;
   height: 100%; }
-  .main-about-social a img {
-    display: flex;
-    width: 1.5rem;
-    margin-top: 3rem;
-    padding-bottom: 0.5rem; }
+  .main-about-social a i {
+    width: 100%;
+    margin-top: 3.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer; }
+    .main-about-social a i:hover {
+      color: orange; }
 
 .main-block {
   width: 100%; }
@@ -128,9 +148,12 @@ table.table {
   text-align: right;
   padding: 1rem; }
 
-.work-experience-up, .work-experience-down {
+.work-experience-up {
   display: flex;
   margin-bottom: 2rem; }
+
+.work-experience-down {
+  display: flex; }
 
 .block-left {
   width: 30%;

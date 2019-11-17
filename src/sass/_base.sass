@@ -1,5 +1,6 @@
 @import 'fonts'
 @import 'vars'
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
 
 *
 	box-sizing: border-box
@@ -16,7 +17,7 @@ body
 	// font-size: 16px
 	overflow-x: hidden
 	font-family: $font--main
-	background-color: #ffff39
+
 
 p
 	word-break: normal
@@ -44,11 +45,17 @@ h3
 		-moz-background-size: cover
 		-o-background-size: cover
 		background-size: cover
+		& p
+			font-family: $font--second
+			font-size: 2rem
+
+a.nav-link
+	cursor: pointer
 
 .header-image
 	text-align: center
-	
-#home img.col-6.rounded-circle 
+
+img.col-6.rounded-circle
     max-width: 30rem
     max-height: 30rem
 
@@ -94,20 +101,16 @@ table.table
 		margin: 0.5rem
 
 .main-about-social
-	text-align: -webkit-center
+	// text-align: -webkit-center
 	height: 100%
-	& a img
-		display: flex
-		width: 1.5rem
-		margin-top: 3rem
-		//text-align: -webkit-center
-		//vertical-align: super
-		padding-bottom: 0.5rem
-
-// .soc
-// 	display: flex
-// 	&:hover
-// 		background: lightgrey
+	& a i
+		width: 100%
+		margin-top: 3.2rem
+		text-align: center
+		font-size: 1.5rem
+		cursor: pointer
+		&:hover
+			color: orange
 
 
 .main-block
@@ -127,9 +130,11 @@ table.table
 		width: 30%
 		text-align: right
 		padding: 1rem
-.work-experience-up,.work-experience-down
+.work-experience-up
 	display: flex
 	margin-bottom: 2rem
+.work-experience-down
+	display: flex
 .block-left
 	width: 30%
 	height: 100%
@@ -146,3 +151,5 @@ table.table
 .block-right
 	width: 70%
 	padding-left: 1rem
+
+	

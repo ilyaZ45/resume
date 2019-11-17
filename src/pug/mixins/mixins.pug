@@ -1,0 +1,39 @@
+mixin thumbnail(imageName, caption)
+  div.thumbnail
+    img(src="/img/#{imageName}.jpg")
+    h4.image-caption= caption
+    
+mixin list
+    ul
+        li 1
+        li 2
+        li 3
+        
+mixin name(name)
+    ul    
+        li(class= 'cons ' + name)= name
+
+    
+mixin news(title)  
+    span.news-title= title
+    .news-text
+        if block 
+            block
+        else 
+            p новостей нет    
+
+mixin link(href,name4)   
+    a(href= href)= name4
+    
+//- mixin list(...items)
+//-     ul
+//-         each item in items
+//-             li(class='social-link_' +item)= item
+
+mixin list(classname,...items)
+    ul(class= '' + classname)
+        each item in items
+            li(class='social-link_' +item)= item
+            
+    
+   
