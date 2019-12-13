@@ -1,228 +1,48 @@
-extends ./pug/layout/base
+﻿extends ./pug/layout/base
 
-block header
-    include ./pug/includes/header
-    
 block main
-
-    section
-        .container
-            +thumbnail("oceans-eleven", "Danny Ocean makes an elevator pitch.")
-            +thumbnail("pirates", "Introducing Captain Jack Sparrow!")
-      
-    example-component
-        +list
-      
-         
-        +name('name1')
-        +name('name2')
-        +name('name3')
-      
-
-        + news('Новость без текста')
-        + news('Новость с текстом')
-            p Lorem
-            p Родился Иван Сусанин
-      
-        +link('yandex.ru', 'Яндекс') 
-        +link('google.ru', 'Гугл') 
-      
-        +list('list1','vk','tw','odn')
-        +list('list2','vk','tw','odn')
-        +list('list3','vk','tw','odn')
-//- doctype html
-//- head
-//-   meta(charset='utf-8')
-//-   //- link(rel='stylesheet', type='text/css', href='style.css')
-//-   title Moy project
-//- .page
-//-   .leftcol
-//-     .header
-//-       .radius1
-//-         .radius2
-//-         br
-//-       h1 ILYA VL.
-//-       br
-//-       h2 BOBLAK
-//-       br
-//-       h4 GRAPHIC DESIGNER
-//-     .content1
-//-       // <div class="block1-1">
-//-       //- img(src='images/Untitled-4.jpg', alt='')
-//-       h3 PROFILE
-//-       hr.hr
-//-       p
-//-         | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,venenatis vitae, justo. Nullam dictum felis eu 
-//-         strong
-//-           | pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-//-       br
-//-     .content2
-//-       //- img(src='images/Untitled-5.jpg', alt='')
-//-       h3 CONTACT
-//-       hr.hr
-//-       .contacts
-//-         // <p><span class="adress">ADRESS</span>Main Street City</p>&lt;!&ndash;можно сделать дивами <div class="fact">
-//-         table
-//-           tr
-//-             th ADRESS
-//-             td LENIN STREET
-//-           tr
-//-             th Lenin stree
-//-             td FFGHJM
-//-           tr
-//-             th JKKKLLKJ
-//-             td KKJJJKKK
-//-           tr
-//-             th &Lcy;&Ocy;&Rcy;&Rcy;&Ocy;&Ocy;&Ocy;
-//-             td &Ocy;&Lcy;&Lcy;&Lcy;&Lcy;&Lcy;&Ocy;&Lcy;&Ocy;
-//-         // <div class="value">Феликс</div>
-//-         // </div>
-//-         // <div class="fact">
-//-         // <div class="title">Позывные</div>
-//-         // <div class="value">Кто в тапки нассал?</div>
-//-         // </div>&ndash;&gt;
-//-         // <p><span class="e-mail">E-MAIL</span>contact@domain.com</p>
-//-         // <p><span class="phone">PHONE</span>555-555-555</p>
-//-         // <p><span class="webste">WEBSITE</span>www.yourweb.com</p>
-//-         // </div>
-//-     .content3
-//-       //- img(src='images/Untitled-6.jpg', alt='')
-//-       h3 SKILLS
-//-       // <div class="hr"></div>
-//-       hr.hr
-//-       // <hr />
-//-       .character
-//-         // <p class="creative">CREATIVE</p><br>
-//-         // <div class="circle">
-//-         // <svg width="740" height="60">
-//-         h4 CREATIVE
-//-         svg
-//-           circle(r='17', cx='100', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='155', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='210', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='265', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='320', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='375', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='430', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='485', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='540', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='595', cy='30', fill='#2ecc71')
-//-           circle(r='17', cx='650', cy='30', fill='#aaa')
-//-           circle(r='17', cx='705', cy='30', fill='#aaa')
-//-         h4 TEAMWORK
-//-         svg
-//-           circle(r='17', cx='10rem', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='15.5rem', cy='20%', fill='#3d6cb0')
-//-           circle(r='17', cx='21rem', cy='20%', fill='#3d6cb0')
-//-           circle(r='17', cx='26.5rem', cy='20%', fill='#3d6cb0')
-//-         // <p class="innovate">INNOVATE</p><br>
-//-         h4 INNOVATE
-//-         svg
-//-           circle(r='17', cx='100', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='155', cy='20%', fill='#3d6cb0')
-//-           circle(r='17', cx='210', cy='20%', fill='#3d6cb0')
-//-           circle(r='17', cx='265', cy='20%', fill='#3d6cb0')
-//-         // <p class="communication">COMMUNICATION</p><br>
-//-         h4 COMMUNICATION
-//-         svg
-//-           circle(r='17', cx='100', cy='30', fill='#3d6cb0')
-//-           circle(r='17', cx='155', cy='20%', fill='#3d6cb0')
-//-           circle(r='17', cx='210', cy='20%', fill='#3d6cb0')
-//-           circle(r='17', cx='265', cy='20%', fill='#3d6cb0')
-//-   .rightcol
-//-     .content4
-//-       //- img(src='images/Untitled-6.jpg', alt='')
-//-       h3 EDUCATION
-//-       hr.hr
-//-       ul
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p hhhhhhhhhhhgjjjjjjjjjjjjjfff
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p hhhhhhhhhhhhhhhhhhggg
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p hhhhhhhhhhggg
-//-       svg
-//-     .content5
-//-       //- img(src='images/Untitled-6.jpg', alt='')
-//-       h3 EXPERIENCE
-//-       hr.hr
-//-       ul
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p hhhhhhhhhhhgjjjjjjjjjjjjjfff
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p
-//-         li
-//-           h5
-//-             strong CALL ME BABE
-//-             |  // UJDJYJ 
-//-             br
-//-             | BBBBNNNNNBB
-//-           br
-//-           p hhhhhhhhhhhhhhhhhhggg
-//-       svg
-//-     .footer
-//-       //- img(src='images/Untitled-5.jpg', alt='')
-//-       h3 SOFTWARE
-//-       hr.hr
-//-       .container
-//-         .leftcontainer
-//-           // <p class="photoshop">PHOTOSHOP</p><br>
-//-           h4 PHOTOSHOP
-//-           // <svg width="553" height="80">
-//-           svg
-//-             line(x1='0', y1='30', x2='502', y2='30', stroke='#3d6cb0', stroke-width='45')
-//-             line(x1='502', y1='30', x2='553', y2='30', stroke='#e6e6e6', stroke-width='45')
-//-           // <p class="illustrator">ILLUSTRATOR</p><br>
-//-           h4 ILLUSTRATOR
-//-           svg
-//-             line(x1='0', y1='30', x2='30%', y2='30', stroke='#3d6cb0', stroke-width='45')
-//-             line(x1='30%', y1='30', x2='80%', y2='30', stroke='#e6e6e6', stroke-width='45')
-//-           // <p class="indesign">INDESIGN</p><br>
-//-           h4 INDESIGN
-//-           svg
-//-             line(x1='0', y1='30', x2='400', y2='30', stroke='#3d6cb0', stroke-width='45')
-//-             line(x1='400', y1='30', x2='420', y2='30', stroke='#e6e6e6', stroke-width='45')
-//-         .rightcontainer
-//-           // <p class="indesign">INDESIGN</p><br>
-//-           h4 HELLO
-//-           svg
-//-             line(x1='0', y1='30', x2='457', y2='30', stroke='#3d6cb0', stroke-width='45')
-//-             line(x1='457', y1='30', x2='551', y2='30', stroke='#e6e6e6', stroke-width='45')
+    .container2
+        .message
+            p Hi,I glad to see you!!
+            
+        .section-about 
+            img.about-photo(src="img/6.jpg" alt="" ) 
+            //- table.table.table-striped
+            //-     tbody
+            //-         tr
+            //-             td Full Name
+            //-             td ::
+            //-             td Ilya Bob
+            //-         tr
+            //-             td Address
+            //-             td ::
+            //-             td My address
+            //-         tr
+            //-             td Zip
+            //-             td ::
+            //-             td 410000
+            //-         tr
+            //-             td Phone
+            //-             td ::
+            //-             td 84952222222
+            //-         tr
+            //-             td Email
+            //-             td ::
+            //-             td 111ilya@mail.ru     
+            .about 
+                h2 Резюме для устройства на работу
+                pre 
+                    b Илья Боблак
+                    br
+                    | Родился : 15.04.1984,г.Ульяновск,Ульяновская обл.
+                    br
+                    | Проживание : г.Балаково,Саратовская обл.    
+                    br
+                    | Готов к переезду.
+                    br
+                    b Контактная информация :
+                    br
+                    | Телефон : 89173228957
+                       
+                        
+    

@@ -129,25 +129,25 @@ window.addEventListener('DOMContentLoaded', () => {
      colorCircle: '#e6e6e6'
    });
    new CircularProgressBar({
-     percent: 10,
+     percent: 30,
      pieName: 'pied',
      colorSlice: '#4CAF50',
      colorCircle: '#e6e6e6'
    });
    new CircularProgressBar({
-    percent: 45,
+    percent: 50,
     pieName: 'piee',
     colorSlice: '#4CAF50',
     colorCircle: '#e6e6e6'
   });
   new CircularProgressBar({
-    percent: 60,
+    percent: 30,
     pieName: 'pieg',
     colorSlice: '#4CAF50',
     colorCircle: '#e6e6e6'
   });
   new CircularProgressBar({
-    percent: 10,
+    percent: 40,
     pieName: 'pieh',
     colorSlice: '#4CAF50',
     colorCircle: '#e6e6e6'
