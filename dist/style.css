@@ -184,6 +184,12 @@ table.table {
   -o-background-size: cover;
   background-size: cover; }
 
+button.button-reverse {
+  position: absolute;
+  left: 43%;
+  background: grey;
+  border: 0.2rem solid red; }
+
 .message {
   display: inline-block;
   text-align: center;

@@ -54,7 +54,7 @@ module: {
                 }
               }]
             },{
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g)$/i,
                 use: [{
                 loader: 'file-loader',
                 options: {
@@ -62,6 +62,11 @@ module: {
                 }
               }],
             },{
+                test: /\.svg$/,
+                loader: 'file-loader'
+            },	
+			
+			{
                 test: /\.(eot|ttf|woff|woff2)$/,
                 use: {
                 loader: 'file-loader',
@@ -113,6 +118,11 @@ new CopyWebpackPlugin([
     from: './src/img',
     to: 'img'
   },
+  {
+    from: './src/svg',
+    to: 'svg'
+  },
+
   {
     from: './src/fonts',
     to: 'fonts'
